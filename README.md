@@ -2,6 +2,11 @@
 
 Unity editor utility for offsetting and/or scaling one or more terrains while preserving the world positions of the existing content. Displays a bounding-box of the current maximum bounds of the terrain as well as a live preview of the changes.
 
+## How to Use
+After copying the TerrainScalingTool.cs script into your Unity project, the tool window can be accessed through [Tools] > Terrain > Scale. Enabling the preview option will store your terrains original data in-memory and show the results of any modifications. Since increasing the scale of your terrain decreases the precision of the height values, this can be useful to ensure signifigant details will not be lost.
+
+**note:** Once details are applied, the previous terrain data can not be restored. if you do not leverage source control to revision your changes, it may be safer to first create a backup of your original data.
+
 ![default](https://github.com/null511/Unity.TerrainScalingTool/raw/master/media/default.png)
 
 ## Offset
